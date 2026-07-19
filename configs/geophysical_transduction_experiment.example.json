@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "TOKEN_VAZIO",
+  "claim_allowed": false,
+  "purpose": "Example preregistration manifest; it contains no measured dataset.",
+  "candidate_mechanisms": [
+    "piezoelectric_quartz",
+    "fracture_contact_electrification",
+    "positive_hole_carriers",
+    "electrokinetic_flow",
+    "solar_ionospheric_modulation",
+    "instrumental_or_anthropogenic"
+  ],
+  "artifacts": {
+    "stress_time_series": "TOKEN_VAZIO",
+    "quartz_fraction": "TOKEN_VAZIO",
+    "crystal_orientation": "TOKEN_VAZIO",
+    "bulk_conductivity": "TOKEN_VAZIO",
+    "electric_sensor_calibration": "TOKEN_VAZIO",
+    "quartz_free_control": "TOKEN_VAZIO",
+    "fracture_or_stick_slip_timing": "TOKEN_VAZIO",
+    "ambient_pressure": "TOKEN_VAZIO",
+    "force_or_acoustic_channel": "TOKEN_VAZIO",
+    "electromagnetic_sensor_calibration": "TOKEN_VAZIO",
+    "material_control": "TOKEN_VAZIO",
+    "rock_lithology": "TOKEN_VAZIO",
+    "surface_current_or_air_ion_channel": "TOKEN_VAZIO",
+    "pore_fluid_composition": "TOKEN_VAZIO",
+    "permeability": "TOKEN_VAZIO",
+    "pressure_gradient": "TOKEN_VAZIO",
+    "electrode_calibration": "TOKEN_VAZIO",
+    "dry_control": "TOKEN_VAZIO",
+    "solar_xray_or_solar_wind_series": "TOKEN_VAZIO",
+    "ionospheric_conductivity_proxy": "TOKEN_VAZIO",
+    "lightning_or_source_activity": "TOKEN_VAZIO",
+    "schumann_or_elf_series": "TOKEN_VAZIO",
+    "clock_synchronization": "TOKEN_VAZIO",
+    "raw_waveform": "TOKEN_VAZIO",
+    "sensor_calibration": "TOKEN_VAZIO",
+    "power_grid_monitor": "TOKEN_VAZIO",
+    "weather_log": "TOKEN_VAZIO",
+    "independent_station": "TOKEN_VAZIO"
+  },
+  "preregistered_metrics": {
+    "time_lag": "TOKEN_VAZIO",
+    "spectral_band": "TOKEN_VAZIO",
+    "minimum_signal_to_noise": "TOKEN_VAZIO",
+    "multiple_testing_control": "TOKEN_VAZIO",
+    "uncertainty_model": "TOKEN_VAZIO"
+  }
+}
