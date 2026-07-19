@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-07-19",
+  "claim_allowed": false,
+  "sources": [
+    {
+      "source_id": "SRC_BRIGHTON_TWINS_OFFICIAL",
+      "title": "Public Art: Twins",
+      "journal_or_authority": "Brighton & Hove City Council",
+      "doi": null,
+      "supports": ["the Churchill Square artwork uses sunlight sensors, recorded weather patterns and audio electronics"],
+      "does_not_support": ["direct measurement of solid-Earth vibration", "marble construction"],
+      "safe_use": "Identity and operating principle of the Brighton artwork."
+    },
+    {
+      "source_id": "SRC_EARTH_HUM_2007",
+      "title": "The Earth's hum is driven by ocean waves over the continental shelves",
+      "journal_or_authority": "Nature",
+      "doi": "10.1038/nature05536",
+      "supports": ["continuous seismic normal-mode excitation near 10 mHz", "ocean-wave forcing over continental shelves"],
+      "does_not_support": ["a single local structure as proof of global hum", "direct conversion of all ground vibration into useful electrical power"],
+      "safe_use": "Primary anchor for continuous solid-Earth hum."
+    },
+    {
+      "source_id": "SRC_EARTH_FREE_OSC_2004",
+      "title": "Excitation of Earth's continuous free oscillations by atmosphere-ocean-seafloor coupling",
+      "journal_or_authority": "Nature",
+      "doi": "10.1038/nature02942",
+      "supports": ["continuous 2-7 mHz free oscillations on days without major earthquakes", "coupled atmosphere-ocean-seafloor forcing"],
+      "does_not_support": ["earthquake-only origin of the hum"],
+      "safe_use": "Coupled source model for background free oscillations."
+    },
+    {
+      "source_id": "SRC_MICROSEISM_TREND_2023",
+      "title": "Increasing ocean wave energy observed in Earth's seismic wavefield since the late 20th century",
+      "journal_or_authority": "Nature Communications",
+      "doi": "10.1038/s41467-023-42673-w",
+      "supports": ["globally observable primary microseisms at approximately 14-20 second periods", "ocean-wave energy coupling into solid Earth"],
+      "does_not_support": ["uniform amplitude at every geological site"],
+      "safe_use": "Modern observational baseline for microseismic forcing."
+    },
+    {
+      "source_id": "SRC_HAMZA_FLOW_2012",
+      "title": "Indications of regional scale groundwater flows in the Amazon Basins: Inferences from results of geothermal studies",
+      "journal_or_authority": "Journal of South American Earth Sciences",
+      "doi": "10.1016/j.jsames.2012.03.007",
+      "supports": ["regional deep groundwater flow inferred from thermal and porous-media models", "estimated continental-margin flow near 3287 cubic metres per second"],
+      "does_not_support": ["a free-flowing underground river channel", "flow exceeding the Amazon River"],
+      "safe_use": "Deep porous-media groundwater-flow hypothesis, not a conventional river."
+    },
+    {
+      "source_id": "SRC_OFFSHORE_AQUIFER_2019",
+      "title": "Aquifer systems extending far offshore on the U.S. Atlantic margin",
+      "journal_or_authority": "Scientific Reports",
+      "doi": "10.1038/s41598-019-44611-7",
+      "supports": ["electromagnetic imaging of laterally extensive low-salinity groundwater offshore New Jersey and Massachusetts"],
+      "does_not_support": ["automatic potability", "renewability", "abyssal-ocean occurrence"],
+      "safe_use": "Geophysical mapping anchor for offshore relatively fresh groundwater."
+    },
+    {
+      "source_id": "SRC_IODP_EXP501_2026",
+      "title": "Expedition 501 New England Shelf Hydrogeology",
+      "journal_or_authority": "International Ocean Drilling Programme and U.S. National Science Foundation",
+      "doi": null,
+      "supports": ["recovery of subseafloor cores and relatively fresh water samples from the New England continental shelf"],
+      "does_not_support": ["sustainable extraction", "confirmed drinking-water resource", "global uniformity"],
+      "safe_use": "Current direct-sampling authority; final geochemical interpretation remains in progress."
+    },
+    {
+      "source_id": "SRC_RINGWOODITE_WATER_2014",
+      "title": "Hydrous mantle transition zone indicated by ringwoodite included within diamond",
+      "journal_or_authority": "Nature",
+      "doi": "10.1038/nature13080",
+      "supports": ["local ringwoodite inclusion containing about one weight percent water-equivalent hydrogen", "transition-zone minerals can store structural hydrogen"],
+      "does_not_support": ["a liquid ocean at 410-660 km depth", "quartz as the mantle water host"],
+      "safe_use": "Deep-water storage in mineral structures, not free liquid."
+    },
+    {
+      "source_id": "SRC_QUARTZ_HYDROGEN_1984",
+      "title": "Hydrogen speciation in synthetic quartz",
+      "journal_or_authority": "Physics and Chemistry of Minerals / USGS record",
+      "doi": "10.1007/BF00308135",
+      "supports": ["molecular water and OH impurities can occur in quartz", "water can be trapped in fluid inclusions"],
+      "does_not_support": ["bulk pure SiO2 generating water from pressure and temperature alone"],
+      "safe_use": "Boundary between quartz framework and included or defect-bound hydrogen."
+    },
+    {
+      "source_id": "SRC_PLANETARY_OCEAN_CHEMISTRY_2026",
+      "title": "The chemistry of habitable oceans in the Solar system",
+      "journal_or_authority": "Nature Communications",
+      "doi": "10.1038/s41467-026-74955-4",
+      "supports": ["planetary waters can have diverse chemistry governed by water-rock interaction and hydrodynamics"],
+      "does_not_support": ["all rocky-planet water must have the same salinity", "all liquid water is seawater-like"],
+      "safe_use": "Planetary salinity and chemistry diversity boundary."
+    }
+  ]
+}

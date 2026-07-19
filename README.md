@@ -7,18 +7,24 @@ Repositório para documentação, modelos, simulações e protocolos experimenta
 - [`docs/propulsao_hall/BASE_ACADEMICA_E_INVARIANTES.md`](docs/propulsao_hall/BASE_ACADEMICA_E_INVARIANTES.md) — base acadêmica, equações, invariantes, protocolo experimental, disciplina estatística e limites patentários para propulsão Hall.
 - [`docs/GEOPHYSICAL_PIEZOELECTRIC_TRIBOLUMINESCENCE_RADIATION_INVARIANT.md`](docs/GEOPHYSICAL_PIEZOELECTRIC_TRIBOLUMINESCENCE_RADIATION_INVARIANT.md) — síntese multiescala de sólidos, sismos, quartzo, radiação, amortecimento e observação.
 - [`docs/GEOPHYSICAL_TRANSDUCTION_EXECUTABLE_GATE.md`](docs/GEOPHYSICAL_TRANSDUCTION_EXECUTABLE_GATE.md) — implementação executável com registro DOI, comparadores físicos, torneio de mecanismos e testes adversariais.
+- [`docs/SOLID_EARTH_HUM_DEEP_WATER_AND_SCALE_BOUNDARIES.md`](docs/SOLID_EARTH_HUM_DEEP_WATER_AND_SCALE_BOUNDARIES.md) — extensão para microseísmos, hum terrestre, fluxo subterrâneo, água em minerais e limites de escala radiativa.
 
-## Execução do gate geofísico
+## Execução dos gates geofísicos
 
 ```bash
 python3 src/geophysical_transduction.py validate-registry \
   data/literature/geophysical_transduction_sources.json
 python3 src/geophysical_transduction.py evaluate-manifest \
   configs/geophysical_transduction_experiment.example.json
-python3 -m pytest -q tests/test_geophysical_transduction.py
+python3 src/solid_earth_hydrology.py validate-registry \
+  data/literature/solid_earth_hydrology_sources.json
+python3 src/solid_earth_hydrology.py classify-period 100
+python3 -m pytest -q \
+  tests/test_geophysical_transduction.py \
+  tests/test_solid_earth_hydrology.py
 ```
 
-O manifesto de exemplo começa sem dados e deve retornar `winner=TOKEN_VAZIO`; prontidão experimental não equivale a causalidade física.
+O manifesto de exemplo começa sem dados e deve retornar `winner=TOKEN_VAZIO`; prontidão experimental não equivale a causalidade física. Sinal óptico ou de rádio não é promovido a raio X sem espectro, calibração, controle de fundo, atenuação e balanço energético.
 
 ## Regra de evidência
 

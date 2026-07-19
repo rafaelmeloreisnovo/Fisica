@@ -4,9 +4,12 @@ on:
   pull_request:
     paths:
       - 'src/geophysical_transduction.py'
+      - 'src/solid_earth_hydrology.py'
       - 'data/literature/geophysical_transduction_sources.json'
+      - 'data/literature/solid_earth_hydrology_sources.json'
       - 'configs/geophysical_transduction_experiment.example.json'
       - 'tests/test_geophysical_transduction.py'
+      - 'tests/test_solid_earth_hydrology.py'
       - '.github/workflows/geophysical-transduction.yml'
   workflow_dispatch:
 
@@ -24,10 +27,16 @@ jobs:
       - name: Install test runner
         run: python -m pip install --disable-pip-version-check pytest
       - name: Compile
-        run: python -m py_compile src/geophysical_transduction.py
-      - name: Validate DOI registry
+        run: |
+          python -m py_compile src/geophysical_transduction.py
+          python -m py_compile src/solid_earth_hydrology.py
+      - name: Validate geophysical DOI registry
         run: python src/geophysical_transduction.py validate-registry data/literature/geophysical_transduction_sources.json
+      - name: Validate solid-Earth and hydrology registry
+        run: python src/solid_earth_hydrology.py validate-registry data/literature/solid_earth_hydrology_sources.json
       - name: Evaluate empty preregistration manifest
         run: python src/geophysical_transduction.py evaluate-manifest configs/geophysical_transduction_experiment.example.json
+      - name: Check Earth-hum period comparator
+        run: python src/solid_earth_hydrology.py classify-period 100
       - name: Run adversarial tests
-        run: python -m pytest -q tests/test_geophysical_transduction.py
+        run: python -m pytest -q tests/test_geophysical_transduction.py tests/test_solid_earth_hydrology.py
