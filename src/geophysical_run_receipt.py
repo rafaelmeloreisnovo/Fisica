@@ -177,7 +177,8 @@ def summarize_channel(
     channel_id: str,
     config: Mapping[str, Any],
 ) -> ChannelSummary:
-    path = (manifest_dir / str(config["path"])).resolve()
+    declared_path = str(config["path"])
+    path = (manifest_dir / declared_path).resolve()
     timestamp_column = str(config["timestamp_column"])
     value_columns = tuple(str(value) for value in config["value_columns"])
     timestamps, rows = _read_numeric_csv(path, timestamp_column, value_columns)
@@ -188,7 +189,7 @@ def summarize_channel(
         sample_rate = 1.0 / interval
     return ChannelSummary(
         channel_id=channel_id,
-        path=str(path),
+        path=declared_path,
         sha256=file_sha256(path),
         rows=rows,
         timestamp_column=timestamp_column,
@@ -279,7 +280,7 @@ def build_receipt(
         "claim_allowed": False,
         "evidence_state": evidence_state,
         "winner": TOKEN_VAZIO,
-        "manifest_path": str(manifest),
+        "manifest_path": manifest.name,
         "manifest_sha256": file_sha256(manifest),
         "channels": channel_payload,
         "controls": payload["controls"],
