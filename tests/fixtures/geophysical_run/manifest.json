@@ -1,0 +1,48 @@
+{
+  "schema": "geophysical_run_manifest_v1",
+  "run_id": "SYNTHETIC-GEORUN-001",
+  "data_class": "synthetic_fixture",
+  "claim_allowed": false,
+  "clock_sync_tolerance_s": 0.0,
+  "channels": {
+    "stress": {
+      "path": "stress.csv",
+      "timestamp_column": "t_s",
+      "value_columns": ["stress_pa"],
+      "calibration_id": "SYNTHETIC-CAL-STRESS-001"
+    },
+    "acoustic": {
+      "path": "acoustic.csv",
+      "timestamp_column": "t_s",
+      "value_columns": ["pressure_pa"],
+      "calibration_id": "SYNTHETIC-CAL-ACOUSTIC-001"
+    },
+    "electric": {
+      "path": "electric.csv",
+      "timestamp_column": "t_s",
+      "value_columns": ["voltage_v"],
+      "calibration_id": "SYNTHETIC-CAL-ELECTRIC-001"
+    },
+    "magnetic": {
+      "path": "magnetic.csv",
+      "timestamp_column": "t_s",
+      "value_columns": ["field_t"],
+      "calibration_id": "SYNTHETIC-CAL-MAGNETIC-001"
+    }
+  },
+  "controls": {
+    "quartz_bearing_sample": {
+      "sample_id": "SYNTHETIC-QUARTZ-001",
+      "composition_evidence": "synthetic_fixture"
+    },
+    "quartz_free_control": {
+      "sample_id": "SYNTHETIC-BASALT-001",
+      "composition_evidence": "synthetic_fixture"
+    }
+  },
+  "device_id": "TOKEN_VAZIO",
+  "operator_id": "TOKEN_VAZIO",
+  "location_coarsened": "TOKEN_VAZIO",
+  "preregistration_id": "TOKEN_VAZIO",
+  "uncertainty_model": "TOKEN_VAZIO"
+}
