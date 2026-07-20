@@ -36,6 +36,16 @@ def test_receipt_is_deterministic():
     assert first["receipt_sha256"] == second["receipt_sha256"]
 
 
+def test_receipt_is_portable_across_checkout_paths(tmp_path):
+    payload = load_fixture()
+    for source in FIXTURE.parent.iterdir():
+        (tmp_path / source.name).write_bytes(source.read_bytes())
+    copied_manifest = tmp_path / "manifest.json"
+    original = build_receipt(payload, FIXTURE)
+    copied = build_receipt(payload, copied_manifest)
+    assert original["receipt_sha256"] == copied["receipt_sha256"]
+
+
 def test_physical_measurement_missing_provenance_stays_token_vazio():
     payload = load_fixture()
     payload["data_class"] = "physical_measurement"
