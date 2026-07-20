@@ -1,0 +1,48 @@
+{
+  "schema": "geophysical_run_manifest_v1",
+  "run_id": "EXPERIMENT-RUN-ID",
+  "data_class": "physical_measurement",
+  "claim_allowed": false,
+  "clock_sync_tolerance_s": 0.001,
+  "channels": {
+    "stress": {
+      "path": "raw/stress.csv",
+      "timestamp_column": "t_s",
+      "value_columns": ["stress_pa"],
+      "calibration_id": "TOKEN_VAZIO"
+    },
+    "acoustic": {
+      "path": "raw/acoustic.csv",
+      "timestamp_column": "t_s",
+      "value_columns": ["pressure_pa"],
+      "calibration_id": "TOKEN_VAZIO"
+    },
+    "electric": {
+      "path": "raw/electric.csv",
+      "timestamp_column": "t_s",
+      "value_columns": ["voltage_v"],
+      "calibration_id": "TOKEN_VAZIO"
+    },
+    "magnetic": {
+      "path": "raw/magnetic.csv",
+      "timestamp_column": "t_s",
+      "value_columns": ["field_t"],
+      "calibration_id": "TOKEN_VAZIO"
+    }
+  },
+  "controls": {
+    "quartz_bearing_sample": {
+      "sample_id": "TOKEN_VAZIO",
+      "composition_evidence": "TOKEN_VAZIO"
+    },
+    "quartz_free_control": {
+      "sample_id": "TOKEN_VAZIO",
+      "composition_evidence": "TOKEN_VAZIO"
+    }
+  },
+  "device_id": "TOKEN_VAZIO",
+  "operator_id": "TOKEN_VAZIO",
+  "location_coarsened": "TOKEN_VAZIO",
+  "preregistration_id": "TOKEN_VAZIO",
+  "uncertainty_model": "TOKEN_VAZIO"
+}
