@@ -1,5 +1,9 @@
 # Física — RAFAELIA
 
+**Estado:** `ACTIVE`  
+**Proprietário lógico:** `research-governance`  
+**Repositório:** [`rafaelmeloreisnovo/Fisica`](https://github.com/rafaelmeloreisnovo/Fisica)
+
 Repositório para documentação, modelos, simulações e protocolos experimentais de física com **separação explícita entre referência, hipótese, simulação e medição**.
 
 ## Documentação técnica
