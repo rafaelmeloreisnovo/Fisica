@@ -1,0 +1,22 @@
+{
+  "schema": "physical_transduction_pathway_v1",
+  "pathway_id": "TOKEN_VAZIO",
+  "domain": "multiphysics",
+  "claim_allowed": false,
+  "components": {
+    "carrier": "TOKEN_VAZIO",
+    "medium": "TOKEN_VAZIO",
+    "scale": "TOKEN_VAZIO",
+    "phase_state": "TOKEN_VAZIO",
+    "free_energy_source": "TOKEN_VAZIO",
+    "coupling_operator": "TOKEN_VAZIO",
+    "conservation_laws": "TOKEN_VAZIO",
+    "rate_or_timescale": "TOKEN_VAZIO",
+    "damping_or_loss": "TOKEN_VAZIO",
+    "observable": "TOKEN_VAZIO",
+    "instrument": "TOKEN_VAZIO",
+    "uncertainty": "TOKEN_VAZIO",
+    "baseline": "TOKEN_VAZIO",
+    "falsifier": "TOKEN_VAZIO"
+  }
+}
